@@ -1,4 +1,6 @@
-"""soluiton"""
+"""
+Proposed solution for the riffle_shuffle_kerfuffle problem from 109 Python Problems for CCPS
+"""
 
 
 def riffle(items, out=True):
