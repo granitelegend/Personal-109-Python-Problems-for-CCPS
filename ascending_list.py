@@ -1,5 +1,7 @@
 
-"""Proposed solution for the ascending_ problem from 109 Python Problems for CCPS"""
+"""
+Proposed solution for the ascending_list problem from 109 Python Problems for CCPS
+"""
 
 def is_ascending(items):
     """Checks if a list is strictly ascending"""
