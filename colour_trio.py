@@ -9,20 +9,12 @@ This is wrong since the expected result is 'r'. Either I am wrong -
 
 def colour_trio(colours):
     """Reduces string of colours to a single colour"""
-    colour_conversion_dict = {
-        # Create Blue
-        'ry': 'b',
-        'yr': 'b',
-        'bb': 'b',
-        # Create Red
-        'yb': 'r',
-        'by': 'r',
-        'rr': 'r',
-        # Create Yellow
-        'br': 'y',
-        'rb': 'y',
-        'yy': 'y',
-    }
+    colour_conversion_dict = {'ry': 'b', 'yr': 'b',
+                              'bb': 'b', 'yb': 'r',
+                              'by': 'r', 'rr': 'r',
+                              'br': 'y', 'rb': 'y',
+                              'yy': 'y',
+                              }
     while len(colours) != 1:
         colour = colours[:2]
         colours = colours[2:]
