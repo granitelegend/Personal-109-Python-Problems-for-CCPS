@@ -3,7 +3,28 @@ Proposed solution for the cyclops_numbers problem from 109 Python Problems for C
 (using only loops, conditions and integer arithmetic operations)
 """
 
+import math
 
+
+# Solution 1, using import math, list and string type-casting and a single if-else block
+def is_cyclops(number):
+    """
+    In order:
+    Checks there is exactly one 0 in number.
+    Checks if length of number is odd.
+    Checks if the digit in the middle of number is 0.
+    :param number (integer)
+    :return boolean
+    """
+    if list(str(number)).count('0') == 1 \
+            and (int(math.log(number, 10)) + 1) % 2 != 0 \
+            and list(str(number))[math.ceil(((int(math.log(number, 10)) + 1) / 2)) - 1] == '0' \
+            or number == 0:
+        return True
+    return False
+
+
+# Solution 2, using only loops, conditions and integer arithmetic operations
 def number_length(number):
     """
     Returns number of digits in number
