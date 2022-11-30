@@ -7,6 +7,8 @@ def riffle(items, out=True):
     """
     Performs the Faro shuffle on a even list.
     Unexecepted output if list is odd.
+    :param items
+    :return list
     """
 
     items_half_length = int(len(items) / 2)
