@@ -1,6 +1,5 @@
 """
 Proposed solution for the cyclops_numbers problem from 109 Python Problems for CCPS
-(using only loops, conditions and integer arithmetic operations)
 """
 
 import math

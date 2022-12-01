@@ -7,15 +7,5 @@ G.idea/sonarlint/issuestore/7/1/71cae0e23eb0cbf7d0208b86810521502f258fff,9\c\9c
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 ^
 ..idea/inspectionProfiles/profiles_settings.xml,1\e\1e9075f5bf079c01ef2c910709e91a497d262080
-B
-cyclops_numbers.py,7\8\78a11833cddbdfe54a40624be231e7f6858f3297
-?
-domino_cycle.py,8\d\8d506449d359d57fa8b07c987d898d5dba90f8d3
-B
-only_odd_digits.py,7\1\71cae0e23eb0cbf7d0208b86810521502f258fff
 K
 riffle_shuffle_kerfuffle.py,f\4\f4c0c0cb78019f68be42c21ac4372578683fbdd0
-A
-ascending_list.py,5\5\55c05a364d8ff0c33dcb5765d26d5ff42cf3b7bd
-C
-count_dominators.py,f\c\fc5543d6547361b016222ba01418669eff850736

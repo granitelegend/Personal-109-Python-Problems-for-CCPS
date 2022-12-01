@@ -1,5 +1,5 @@
 """
-Proposed solution for the cyclops_numbers problem from 109 Python Problems for CCPS
+Proposed solution for the colour_trio problem from 109 Python Problems for CCPS
 """
 
 
