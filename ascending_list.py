@@ -4,10 +4,10 @@ Proposed solution for the ascending_list problem from 109 Python Problems for CC
 
 
 def is_ascending(items):
-    """Checks if a list is strictly ascending"""
-    for counter, item in enumerate(items):
-        if counter == len(items) - 1:
+    for index, item in enumerate(items):
+        try:
+            if item >= items[index + 1]:
+                return False
+        except IndexError:
             break
-        if item >= items[counter + 1]:
-            return False
     return True
