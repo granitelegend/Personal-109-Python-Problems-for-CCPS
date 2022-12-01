@@ -1,9 +1,5 @@
 """
 Proposed solution for the cyclops_numbers problem from 109 Python Problems for CCPS
-Note: 'brrrrr' -> 'y' and 'rybyry' -> 'r'
-Yet following the same process used for 'brrrrr', makes 'rybyry' become 'b'.
-This is wrong since the expected result is 'r'. Either I am wrong -
-- or there must be a mistake in the .pdf.
 """
 
 
@@ -16,7 +12,10 @@ def colour_trio(colours):
                               'yy': 'y',
                               }
     while len(colours) != 1:
-        colour = colours[:2]
-        colours = colours[2:]
-        colours = colour_conversion_dict[colour] + colours
+        current_colours = ''
+        for index in range(len(colours)):
+            current_colours = current_colours + colour_conversion_dict[colours[index:index + 2]]
+            if index == len(colours) - 2:
+                break
+        colours = current_colours[:]
     return colours
