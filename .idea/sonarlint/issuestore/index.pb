@@ -11,13 +11,21 @@ K
 riffle_shuffle_kerfuffle.py,f\4\f4c0c0cb78019f68be42c21ac4372578683fbdd0
 B
 only_odd_digits.py,7\1\71cae0e23eb0cbf7d0208b86810521502f258fff
->
-colour_trio.py,c\8\c8065d0fed771b6cbff0ba19af7452d9f6f2caa4
-D
-beat_the_previous.py,e\9\e905412a9cc42df5849da00ed1740f4bb24557f5
 C
 count_dominators.py,f\c\fc5543d6547361b016222ba01418669eff850736
 B
 cyclops_numbers.py,7\8\78a11833cddbdfe54a40624be231e7f6858f3297
 ?
 domino_cycle.py,8\d\8d506449d359d57fa8b07c987d898d5dba90f8d3
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+A
+ascending_list.py,5\5\55c05a364d8ff0c33dcb5765d26d5ff42cf3b7bd
+M
+iterated_ordinal_transform.py,2\a\2a8561afdc0745730904c5c48dfff4e15f68088a
+>
+colour_trio.py,c\8\c8065d0fed771b6cbff0ba19af7452d9f6f2caa4
+D
+beat_the_previous.py,e\9\e905412a9cc42df5849da00ed1740f4bb24557f5
