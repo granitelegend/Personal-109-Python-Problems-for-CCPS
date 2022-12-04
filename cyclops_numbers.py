@@ -23,6 +23,8 @@ def is_cyclops(number):
     return False
 
 
+print(is_cyclops(7820281))
+
 # Solution 2, using only loops, conditions and integer arithmetic operations
 def number_length(number):
     """
