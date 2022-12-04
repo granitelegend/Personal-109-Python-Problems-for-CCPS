@@ -15,15 +15,16 @@ def is_cyclops(number):
     :param number (integer)
     :return boolean
     """
-    if list(str(number)).count('0') == 1 \
-            and (int(math.log(number, 10)) + 1) % 2 != 0 \
-            and list(str(number))[math.ceil(((int(math.log(number, 10)) + 1) / 2)) - 1] == '0' \
-            or number == 0:
+    if (
+        list(str(number)).count("0") == 1
+        and (int(math.log(number, 10)) + 1) % 2 != 0
+        and list(str(number))[math.ceil(((int(math.log(number, 10)) + 1) / 2)) - 1]
+        == "0"
+        or number == 0
+    ):
         return True
     return False
 
-
-print(is_cyclops(7820281))
 
 # Solution 2, using only loops, conditions and integer arithmetic operations
 def number_length(number):
