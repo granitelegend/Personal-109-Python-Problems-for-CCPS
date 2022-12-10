@@ -4,7 +4,6 @@ Proposed solution for the cyclops_numbers problem from 109 Python Problems for C
 
 import math
 
-
 # Solution 1, using import math, list and string type-casting and a single if-else block
 def is_cyclops(number):
     """
@@ -40,7 +39,7 @@ def number_length(number):
     return counter
 
 
-def cyclops_number(number):
+def is_cyclops(number):
     """
     Checks if number is a cyclops number
     :param number:
@@ -65,3 +64,35 @@ def cyclops_number(number):
         else:
             return False
     return True
+
+
+# Solution 3, a shorter Solution 2 using Theorem 1.
+
+# Unproven conjecture used as Theorem 1:
+# The distance to before the middle of an odd list is k, k as solution to 2k+1 = len(List)
+# Visual example of Theorem 1:
+# [1,2,3,4,5,6,7,8,9], The middle number is 5.
+# If I were to walk to 5 then I would have taken (n-1)/2 steps before stepping on 5.
+
+
+def is_cyclops(n):
+    mark_zero, count_length, count_zero = 0, 0, 0
+    while True:
+        count_length += 1
+        if n % 10 == 0:
+            mark_zero = count_length
+            count_zero += 1
+        n //= 10
+        if not n:
+            break
+    return count_zero == 1 and mark_zero == ((count_length - 1) // 2) + 1
+
+
+# Solution 4, an awful looking one-liner solution, assuming Theorem 1 is true.
+
+
+def is_cyclops(n):
+    return (
+        int(list(str(n)).count("0")) == 1
+        and int(list(str(n))[(len(str(n)) - 1) // 2]) == 0
+    )
